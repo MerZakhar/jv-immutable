@@ -28,7 +28,9 @@ public class Wheel implements Cloneable {
 
     @Override
     public boolean equals(Object o) {
-        if (o == null || getClass() != o.getClass()) return false;
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
         Wheel wheel = (Wheel) o;
         return Objects.equals(radius, wheel.radius);
     }
